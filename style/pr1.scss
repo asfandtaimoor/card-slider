@@ -12,7 +12,20 @@ body {
   margin: 0;
   padding: 0;
 }
+.testimonials {
+  position: relative;
+}
 
+section.testimonials:before {
+  position: absolute;
+  content: '';
+  background-image: url(../bgstyle/testimonials-right-dec.png);
+  left: 0px;
+  top: -140px;
+  width: 593px;
+  height: 352px;
+  z-index: 99;
+}
 .swiper-slide {
   text-align: center;
   font-size: 18px;
