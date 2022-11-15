@@ -58,9 +58,6 @@ span {
 }
 
 .card {
-  width: 100%;
-  max-width: 340px;
-  min-width: 220px;
   position: relative;
 }
 
@@ -82,5 +79,9 @@ span {
   position: absolute;
   right: 30px;
   bottom: 0px;
+}
+
+.w-70 {
+  width: 70%;
 }
 /*# sourceMappingURL=common.css.map */

@@ -23,7 +23,7 @@
         <h2 class="heading-1">What They<em> Think</em></h2>
       </div>
       <!-- card section  -->
-      <section class="swiper mySwiper">
+      <section class="w-70 swiper mySwiper">
         <div class="section-md-p swiper-wrapper">
           <div class="card swiper-slide">
             <p class="desc-2">
@@ -34,6 +34,7 @@
             <span>Gadget Reviewer</span>
             <img class="icon d-block" src="./icon/quote.png" alt="" />
           </div>
+
           <div class="card swiper-slide">
             <p class="desc-2">
               "“Praesent accumsan condimentum arcu, id porttitor est semper nec.
@@ -107,6 +108,7 @@
             <img class="icon d-block" src="./icon/quote.png" alt="" />
           </div>
         </div>
+        <div class="swiper-pagination"></div>
       </section>
     </section>
 
@@ -117,6 +119,10 @@
       var swiper = new Swiper('.mySwiper', {
         slidesPerView: 1,
         spaceBetween: 10,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
         pagination: {
           el: '.swiper-pagination',
           clickable: true,
@@ -131,11 +137,11 @@
             spaceBetween: 20,
           },
           '@1.00': {
-            slidesPerView: 3,
+            slidesPerView: 2,
             spaceBetween: 40,
           },
           '@1.50': {
-            slidesPerView: 4,
+            slidesPerView: 3,
             spaceBetween: 50,
           },
         },
