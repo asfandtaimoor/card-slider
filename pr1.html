@@ -9,14 +9,137 @@
     <link rel="stylesheet" href="./style/pr1.scss" />
     <!-- common style sheet  -->
     <link rel="stylesheet" href="./style/common.css" />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
   </head>
   <body>
-    <section class="testi">
+    <section class="testi section-lg-p">
       <!-- testimonials card section  -->
-      <div class="testi-header">
+      <div class="testi-header t-center">
         <p class="desc-1">TESTIMONIALS</p>
         <h2 class="heading-1">What They<em> Think</em></h2>
       </div>
+      <!-- card section  -->
+      <section class="swiper mySwiper">
+        <div class="section-md-p swiper-wrapper">
+          <div class="card swiper-slide">
+            <p class="desc-2">
+              "“Praesent accumsan condimentum arcu, id porttitor est semper nec.
+              Nunc diam lorem.”"
+            </p>
+            <h2 class="heading-2 d-block">George Soft</h2>
+            <span>Gadget Reviewer</span>
+            <img class="icon d-block" src="./icon/quote.png" alt="" />
+          </div>
+          <div class="card swiper-slide">
+            <p class="desc-2">
+              "“Praesent accumsan condimentum arcu, id porttitor est semper nec.
+              Nunc diam lorem.”"
+            </p>
+            <h2 class="heading-2 d-block">Maxi Power</h2>
+            <span>Fashion Designer</span>
+            <img class="icon d-block" src="./icon/quote.png" alt="" />
+          </div>
+          <div class="card swiper-slide">
+            <p class="desc-2">
+              "“Praesent accumsan condimentum arcu, id porttitor est semper nec.
+              Nunc diam lorem.”"
+            </p>
+            <h2 class="heading-2 d-block">Sophia Whity</h2>
+            <span>CEO and CO-Founder</span>
+            <img class="icon d-block" src="./icon/quote.png" alt="" />
+          </div>
+          <div class="card swiper-slide">
+            <p class="desc-2">
+              "“Praesent accumsan condimentum arcu, id porttitor est semper nec.
+              Nunc diam lorem.”"
+            </p>
+            <h2 class="heading-2 d-block">Olivia Too</h2>
+            <span>Create Designer</span>
+            <img class="icon d-block" src="./icon/quote.png" alt="" />
+          </div>
+          <div class="card swiper-slide">
+            <p class="desc-2">
+              "“Praesent accumsan condimentum arcu, id porttitor est semper nec.
+              Nunc diam lorem.”"
+            </p>
+            <h2 class="heading-2 d-block">Helen Shiny</h2>
+            <span>Teach Officer</span>
+            <img class="icon d-block" src="./icon/quote.png" alt="" />
+          </div>
+          <div class="card swiper-slide">
+            <p class="desc-2">
+              "“Praesent accumsan condimentum arcu, id porttitor est semper nec.
+              Nunc diam lorem.”"
+            </p>
+            <h2 class="heading-2 d-block">David Martin</h2>
+            <span>CTO of Teach Company</span>
+            <img class="icon d-block" src="./icon/quote.png" alt="" />
+          </div>
+          <div class="card swiper-slide">
+            <p class="desc-2">
+              "“Praesent accumsan condimentum arcu, id porttitor est semper nec.
+              Nunc diam lorem.”"
+            </p>
+            <h2 class="heading-2 d-block">George Soft</h2>
+            <span>Gadget Reviewer</span>
+            <img class="icon d-block" src="./icon/quote.png" alt="" />
+          </div>
+          <div class="card swiper-slide">
+            <p class="desc-2">
+              "“Praesent accumsan condimentum arcu, id porttitor est semper nec.
+              Nunc diam lorem.”"
+            </p>
+            <h2 class="heading-2 d-block">George Soft</h2>
+            <span>Gadget Reviewer</span>
+            <img class="icon d-block" src="./icon/quote.png" alt="" />
+          </div>
+          <div class="card swiper-slide">
+            <p class="desc-2">
+              "“Praesent accumsan condimentum arcu, id porttitor est semper nec.
+              Nunc diam lorem.”"
+            </p>
+            <h2 class="heading-2 d-block">George Soft</h2>
+            <span>Gadget Reviewer</span>
+            <img class="icon d-block" src="./icon/quote.png" alt="" />
+          </div>
+        </div>
+      </section>
     </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper('.mySwiper', {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+        breakpoints: {
+          '@0.00': {
+            slidesPerView: 1,
+            spaceBetween: 10,
+          },
+          '@0.75': {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          '@1.00': {
+            slidesPerView: 3,
+            spaceBetween: 40,
+          },
+          '@1.50': {
+            slidesPerView: 4,
+            spaceBetween: 50,
+          },
+        },
+      });
+    </script>
   </body>
 </html>
